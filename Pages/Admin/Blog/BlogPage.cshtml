@@ -1,0 +1,35 @@
+﻿@page
+@model FirstWebCoreAssignment.Pages.Admin.Blog.CreateBlogModel
+@{
+
+    <form method="post">
+        <div>
+            <label asp-for="BlogPage.Title"></label>
+            <input asp-for="BlogPage.Title" />
+            <span asp-validation-for="BlogPage.Title"></span>
+
+        </div>
+
+        <div>
+            <label asp-for="BlogPage.Content"></label>
+            <input asp-for="BlogPage.Content" />
+            <span asp-validation-for="BlogPage.Content"></span>
+
+        </div>
+
+        <div>
+            <label asp-for="BlogPage.PublishDate"></label>
+            <input asp-for="BlogPage.PublishDate" />
+            <span asp-validation-for="BlogPage.PublishDate"></span>
+
+        </div>
+
+
+        <div>
+            <label asp-for="BlogPage.NewAuthor"></label>
+            <input asp-for="BlogPage.NewAuthor" />
+            <span asp-validation-for="BlogPage.NewAuthor"></span>
+
+        </div>
+    </form>
+}

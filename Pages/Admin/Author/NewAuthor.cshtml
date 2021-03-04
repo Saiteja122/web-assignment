@@ -1,0 +1,92 @@
+﻿@page
+@model FirstWebCoreAssignment.Pages.Admin.Author.CreateAuthorModel
+@{
+    ViewData["Title"] = "New Page";
+}
+
+
+<form method="post">
+    <input asp-for="NewAuthor.ID" />
+    <div>
+        <label asp-for="NewAuthor.LastName"></label>
+        <input asp-for="NewAuthor.LastName" />
+        <span asp-validation-for="NewAuthor.LastName"></span>
+
+    </div>
+
+    <div>
+        <label asp-for="NewAuthor.FirstName"></label>
+        <input asp-for="NewAuthor.FirstName" />
+        <span asp-validation-for="NewAuthor.FirstName"></span>
+
+
+    </div>
+
+    <div>
+        <label asp-for="NewAuthor.DateOfBirth"></label>
+        <input asp-for="NewAuthor.DateOfBirth" />
+        <span asp-validation-for="NewAuthor.DateOfBirth"></span>
+
+    </div>
+
+
+    <div>
+        <label asp-for="NewAuthor.EmailAddress"></label>
+        <input asp-for="NewAuthor.EmailAddress" />
+        <span asp-validation-for="NewAuthor.EmailAddress"></span>
+
+    </div>
+
+
+    <div>
+        <label asp-for="NewAuthor.WebAddress"></label>
+        <input asp-for="NewAuthor.WebAddress" />
+        <span asp-validation-for="NewAuthor.WebAddress"></span>
+
+    </div>
+
+    <div>
+        <label asp-for="NewAuthor.PhoneNumber"></label>
+        <input asp-for="NewAuthor.PhoneNumber" />
+        <span asp-validation-for="NewAuthor.PhoneNumber"></span>
+
+    </div>
+
+
+    <div>
+        <label asp-for="NewAuthor.Country"></label>
+        <input asp-for="NewAuthor.Country" />
+        <span asp-validation-for="NewAuthor.Country"></span>
+
+    </div>
+
+
+    <div>
+        <label asp-for="NewAuthor.Province"></label>
+        <input asp-for="NewAuthor.Province" />
+        <span asp-validation-for="NewAuthor.Province"></span>
+
+    </div>
+
+
+    <div>
+        <label asp-for="NewAuthor.PostalCode"></label>
+        <input asp-for="NewAuthor.PostalCode" />
+        <span asp-validation-for="NewAuthor.PostalCode"></span>
+
+    </div>
+    <div>
+        <button type="submit" value="Search">SUBMIT</button>
+
+    </div>
+</form>
+
+
+@section Scripts
+{
+    <script src="~/lib/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}
+
